@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*--reset section ---*/
+:root{
+    --primary-text-color: #183b56;
+    --secondary-text-color:#577592;
+    --accent-color:#2294ed;
+    --accent-color-dark:#1d69a3;
+    --padding-inline-section:10px;
+}
+
+body{
+    font-family: 'poppins' , sans-serif;
+    color: var(--primary-text-color);
+    
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+}
+h1{
+    font-size: 1.5rem;
+}
+p{
+  font-family: 'Roboto' , sans-serif;
+  font-size: 1.25rem;
+  color: var(--secondary-text-color);
+  line-height: 1.8rem;  
+}
+/*--utility section ---*/
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+/*--top banner section ---*/
+.banner-text{
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    padding: 0px 15px;
+    text-align: center;
+}
+.top-banner{
+    background-color:#2294ed ;
+    background-image: url(images/asset\ 30.png);
+  
+    background-size: 250px;
+}
+.container{
+    max-width: 1188px;
+    margin-inline: auto;
+    padding: var(--padding-inline-section);
+    overflow: hidden;
+  
+}
+/*-- nav-links section ---*/
+.nav{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.logo img{
+    width: 150px;
+    cursor: pointer;
+}
+
+.nav ul {
+    list-style: none;
+    
+
+} 
+.nav ul li{
+    display: inline-flex;
+    padding: 0px 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    
+}
+.nav ul li a {
+    color:var(--primary-text-color);
+    text-decoration: none;
+}
+.nav ul li a:hover{
+    color:#2294ed;
+    transition: ease-in .2s;
+    
+}
+.sign-in-btn {
+    display: block;
+
+    text-transform: capitalize;
+    border: 1px var(--primary-text-color) solid;
+    color: var(--primary-text-color);
+    padding: 5px 6px;
+    border-radius: 5px;
+}
+.sign-in-btn:hover{
+    color: white !important;
+    background-color: var(--accent-color);
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    transition: .2s ease-out !important;
+    
+}
+.nav-toggle i{
+    color:var(--primary-text-color);
+    text-decoration: none;
+    display: none;
+}
+.nav-toggle a:hover{
+    color:#2294ed;
+    transition: ease-in .2s;}
+/*--header-section---*/
+.header-section{
+    margin-top:30px ;
+    display: grid;
+    align-items: center;
+    
+    grid-template-columns: 50% 50%;
+}
+.page1{
+    align-items: center;
+}
+.page1 h1{
+    color: var(--primary-text-color);
+
+}
+.page1 p{
+    color: var(--secondary-text-color);
+}
+.page2 img{
+ width: 100%;
+ height: 100%;
+
+}
+#getstart-btn{
+    display: inline-block;
+    align-self: center ;
+    width: 150px;
+    text-transform: capitalize;
+    border: 1px var(--primary-text-color) solid;
+    color: var(--primary-text-color);
+    padding: 5px 6px;
+    border-radius: 5px;
+}
+#getstart-btn:hover{
+    color: white !important;
+    background-color: var(--accent-color);
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    transition: .2s ease-out !important;
+    
+}
+
+
+#mid-text{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--secondary-text-color);
+    padding: 0px 15px;
+    text-align: center;
+}
+#company-logo{
+    margin: 10px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+    
+    
+    
+}
+#company-logo img{
+    padding: 0px 10px;
+    height: 40px;
+    
+}
+
+
+
+/*---- features-css --*/
+#features{
+    height: 100%;
+}
+.feature-text{
+    color: var(--primary-text-color);
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+
+
+#features-box{
+    margin-top: 15px;
+    gap: 10px;
+    display: grid;
+    align-items: center;
+    grid-template-columns : repeat(3, 200px) ;
+    justify-content: space-between;
+}
+.ftr-cards{
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 180px;
+    height: 250px;
+    margin: 10px 8px;
+}
+.ftr-cards img{
+    height: 40px;
+}
+.ftr-btn{
+    cursor: pointer;
+    border:1px  var(--secondary-text-color) solid;
+    border-radius: 5px;
+    color: var(--primary-text-color);
+    padding: 8px 8px;
+
+}
+.ftr-btn:hover{
+    color: var(--primary-text-color);
+    transform: scale(0.9);
+    transition: ease 0.5s;
+}
+
+/*----bif features section----*/
+
+.big-ftr{
+    display: flex;
+    align-items: center;
+    
+  
+
+}
+#ftr-1-1 img{
+    height: 100vh;
+
+}
+/* example-section */
+.tagline {
+    text-align: center !important;
+    margin: 20px 0px;
+}
+
+.example-btn{
+  display: inline-block !important;
+  margin-top: 10px;
+}
+
+.example{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    column-gap: 20px;
+   
+   
+    
+    
+    
+}
+.example-img-1{
+    width: 35%;
+    margin: 20px 0px;
+    height: 60%;
+    background-image: url(images/asset\ 36.jpeg);
+    background-size: cover;
+    align-items: center;
+    position: relative;
+   justify-items: center;
+    
+}
+
+
+.card-tag{
+    text-align: center;
+    margin: 70% 0%;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+/* testing-section */
+.testing{
+    height: 50vh;
+    background-color:var(--primary-text-color) ;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    
+   
+    
+}
+
+.get-btn{
+    display: inline-block;
+    padding: 5px 5px;
+    border-radius: 5px;
+    background-color: #1d69a3;
+
+}
+.get-btn:hover{
+    background-color:var(--primary-text-color);
+}
+
+/* footer-zection */
+#footer{
+    display: flex;
+    gap: 20px;
+   justify-content: space-between;
+  
+   background-color: rgb(201, 208, 213);
+   padding: 30px 20px;
+    
+}
+ .footer-link{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+ }
+ .footer-link a {
+    color: black;
+    font-weight: 400;
+
+ }
+ 
+  .footer-link a:hover{
+    color: #2294ed;
+  }
+  .sub-footer {
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background-color: rgb(123, 117, 117);
+   
+
+  }
+ .sub-footer a{
+    color: black;
+
+ }
+
+
+

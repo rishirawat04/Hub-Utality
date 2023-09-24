@@ -1,0 +1,20 @@
+@media screen and (max-width: 991px){
+    .nav-toggle i{
+        display: block;
+        margin-right: 20px;
+    }
+    .nav-links{
+        display: none;
+    }
+    .example{
+        flex-wrap: wrap;
+        
+        justify-content: center;
+        padding: 0px 30px;
+      
+    }
+    #ftr-1-1 img{
+        width: 40vh;
+        height: 50vh;
+    }
+}
